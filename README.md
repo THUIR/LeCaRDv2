@@ -11,7 +11,7 @@
 
 ## Overview
 
-* [Introduction](#introduction)
+- [Introduction](#introduction)
 - [Dataset Structure](#dataset-structure)
 - [Install](#install)
 - [Experiment](#experiment)
