@@ -2,7 +2,7 @@
  * @Author: lihaitao
  * @Date: 2023-02-28 23:34:00
  * @LastEditors: Do not edit
- * @LastEditTime: 2023-02-28 23:44:02
+ * @LastEditTime: 2023-03-02 01:46:13
  * @FilePath: /LeCaRD2.0/LeCaRDv2/README.md
 -->
 # LeCaRDv2:A Large-Scale Chinese Legal Case Retrieval Dataset
@@ -29,10 +29,16 @@ LeCaRDv2 is one of the largest Chinese legal case retrieval datasets with the wi
 ### Query
 `query.json` has 800 lines. Each line is a *dictionary* representing a query. An example of a *dictionary* is:
 
-> {"id": 794, "query": "姚帝锋抢劫罪一审刑事判决书重庆市北碚区人民法院刑事判决书（2019）渝0109刑初483号：重庆市北碚区人民检察院以渝碚检刑诉〔2019〕439号起诉书指控被告人姚帝锋犯抢劫罪，向本院提起公诉。本院适用刑事案件速裁程序，实行独任审判，公开开庭审理本案公诉机关指控，2019年5月31日22时许，被告人姚帝锋预谋抢劫后来到重庆市北碚区七一桥路段，对独自步行的被害人王某进行尾随，尔后用左手持美工刀卡住王某的脖子对其进行威胁并索要现金，因王某未携带现金，姚帝峰未劫得财物。姚帝峰逃离现场后将上述美工刀丢弃于北碚区龙凤桥下龙凤溪中。2019年6月4日，被告人姚帝锋被公安民警抓获归案，其归案后如实供述了公安机关已掌握的上述犯罪事实。公诉机关认为，被告人姚帝锋以非法占有为目的，当场使用暴力抢劫他人财物，其行为触犯了《中华人民共和国刑法》第二百六十三条，犯罪事实清楚，证据确实、充分，应当以抢劫罪追究其刑事责任。鉴于被告人姚帝锋已经着手实行犯罪，由于意志以外的原因而未得逞，系犯罪未遂，对其处罚时还应当适用《中华人民共和国刑法》第二十三条的规定可以比照既遂犯从轻或者减轻处罚;姚帝锋如实供述自己的罪行，对其处罚时还应当适用《中华人民共和国刑法》第六十七条第三款的规定可以从轻处罚。建议判处被告人姚帝锋有期徒刑二年，宣告缓刑四年，并处罚金2000元。被告人姚帝锋对公诉机关指控的事实、罪名及量刑建议无异议且签字具结"}
+> {"id": 233, "query":"告石康军贩卖毒品一审判决书湖南省衡阳市珠晖区人民法院刑事判决书（2017）湘0405刑初149号：湖南省衡阳市珠晖区人民检察院以珠检公诉刑诉〔2017〕127号起诉书指控被告人石康军犯贩卖毒品罪，于2017年9月30日向本院提起公诉。本院于当日受理后，依法适用普通程序，由审判员陈东升担任审判长，与审判员阳福明、人民陪审员肖才闰组成合议庭，于2017年11月30日公开开庭审理了本案。代理书记员段佳丽担任记录。衡阳市珠晖区人民检察院指派检察员谢小芸出庭支持公诉。被告人石康军及其辩护人王剑清到庭参加诉讼......", "fact": "公诉机关指控：贩卖毒品罪被告人石康军系无业吸毒人员，以贩养吸，2017年5月至6月期间，被告人6次贩卖甲基苯丙胺（冰毒）给贩毒人员吸食共计约5.6克，查获尚未贩卖的甲基苯丙胺208.32克、甲基苯丙胺片剂3.94克。二、容留他人吸毒罪被告人石康军在其位于本市珠晖区家中，三次容留吸毒人员张某某吸食毒品甲基苯丙胺。"}
 
+where `id` is each query's unique ID, `query` is the query content, and `fact` is the fact description of this query case.
+
+`common_query.json`/`controversial_query.json`/`procedural_query.json` save the common query/controversial query/procedural query respectively. Details about the different types of queries can be viewed in our paper.
 
 ### Candidates
+You can download the candidate cases from this link [download](https://drive.google.com/file/d/1CqQ0ID5_9-qxaZm9TGLh38dVhLfYnl_C/view?usp=share_link)
+
+
 
 ### Labels
 
