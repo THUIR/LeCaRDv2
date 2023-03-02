@@ -2,12 +2,10 @@
  * @Author: lihaitao
  * @Date: 2023-02-28 23:34:00
  * @LastEditors: Do not edit
- * @LastEditTime: 2023-03-02 12:17:08
+ * @LastEditTime: 2023-03-02 14:32:59
  * @FilePath: /LeCaRD2.0/LeCaRDv2/README.md
 -->
 # LeCaRDv2:A Large-Scale Chinese Legal Case Retrieval Dataset
-
-
 
 ## Overview
 
@@ -53,8 +51,36 @@ where `pid` is the ID of the case, `qw` is the full content,  `fact` is the basi
 ## Experiment
 The traditional methods are implemented with [pyserini](https://github.com/castorini/pyserini) toolkit and the code of the pre-trained model is referenced from [dense](https://github.com/luyug/Dense).
 
+We conduct experiments on state-of-the-art models with zero-shot and fine-tuning settings. Under the zero-shot setting, all annotated data in LeCaRDv2 are employed to evaluate. The zero-shot results are:
+| **Model**   | **R@100**  | **R@200**  | **R@500**  | **R@1000** |
+| ----------- | ---------- | ---------- | ---------- | ---------- |
+| BM25        | **0.6262** | **0.6629** | 0.6949     | 0.7207     |
+| QLD         | 0.5984     | 0.6576     | **0.7065** | **0.7424** |
+| Bert        | 0.1165     | 0.1526     | 0.2184     | 0.2805     |
+| Roberta     | 0.3753     | 0.4739     | 0.6152     | 0.7126     |
+| Bert_xs     | 0.0453     | 0.0614     | 0.0949     | 0.1343     |
+| Lawformer   | 0.2432     | 0.3040     | 0.4054     | 0.4833     |
+| Condenser   | 0.2215     | 0.2987     | 0.4321     | 0.5452     |
+| coCondenser | 0.2255     | 0.3093     | 0.4460     | 0.5514     |
+| SEED        | 0.3544     | 0.4474     | 0.5745     | 0.6657     |
+| RetroMAE    | 0.3193     | 0.3947     | 0.5010     | 0.5821     |
 
 
+Under the fine-tuning setting, we sampled 20% cases from each charge as the test set. There are 640 queries for training and 160 queries for testing.  The fine-tuning results are:
+
+
+| **Model**   | **R@100**  | **R@200**  | **R@500**  | **R@1000** |
+| ----------- | ---------- | ---------- | ---------- | ---------- |
+| BM25        | **0.6050** | **0.6428** | 0.6735     | 0.7015     |
+| QLD         | 0.5749     | 0.6354     | **0.6882** | **0.7222** |
+| Bert        | 0.3849     | 0.5026     | 0.6649     | 0.7797     |
+| Roberta     | 0.4136     | 0.5330     | 0.6964     | 0.7998     |
+| Bert_xs     | 0.2074     | 0.2750     | 0.3935     | 0.4941     |
+| Lawformer   | 0.3651     | 0.4851     | 0.6443     | 0.7629     |
+| Condenser   | 0.3982     | 0.5003     | 0.6761     | 0.7969     |
+| coCondenser | 0.3998     | 0.5024     | 0.6861     | 0.8036     |
+| SEED        | 0.4201     | 0.5437     | **0.7160** | 0.8132     |
+| RetroMAE    | 0.4210     | 0.5397     | 0.7093     | **0.8174** |
 
 <!-- ## Evaluation -->
 
