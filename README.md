@@ -2,7 +2,7 @@
  * @Author: lihaitao
  * @Date: 2023-02-28 23:34:00
  * @LastEditors: Do not edit
- * @LastEditTime: 2023-03-02 14:38:06
+ * @LastEditTime: 2023-03-02 14:45:10
  * @FilePath: /LeCaRD2.0/LeCaRDv2/README.md
 -->
 # LeCaRDv2:A Large-Scale Chinese Legal Case Retrieval Dataset
@@ -26,10 +26,10 @@ Compared with LeCaRDv1, the data size of LeCaRDv2 is approximately 8 times large
 The statistics of LeCaRDv2 shows as follow:
 |                         | LeCaRDv2      | 
 | ----------------------- | ------------- |
-| #Users                  | 173,831       |
-| #Items                  | 12,872,636    | 
-| #Interactions           | 26,667,260    | 
-| #Test Queries           | 171,728       | 
+| #Queries                  | 800       |
+| #Candidate cases/query                  | 55,192    | 
+| Avg.length per case document           | 4,766    | 
+| #Avg.relevant case per query           | 20.89       | 
 
 
 ## Data Structure
@@ -57,7 +57,7 @@ where `pid` is the ID of the case, `qw` is the full content,  `fact` is the basi
 ### Labels
 `relevence.trec` is the relevance annotation with TREC qrels format. Specifically, each line has the `qid \t 0 \t pid \t label` format.
 
-`relevence_gold.trec` is annotated with relevance at level 2 or higher.
+`relevence_gold.trec` is annotated with relevance at level 2 or higher. For convenience, the annotation labels of the test data are organized in `test_relevence.trec`/`test_relevence_gold.trec` 
 
 ## Experiment
 The traditional methods are implemented with [pyserini](https://github.com/castorini/pyserini) toolkit and the code of the pre-trained model is referenced from [dense](https://github.com/luyug/Dense).
