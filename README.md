@@ -2,7 +2,7 @@
  * @Author: lihaitao
  * @Date: 2023-02-28 23:34:00
  * @LastEditors: Do not edit
- * @LastEditTime: 2023-03-02 14:32:59
+ * @LastEditTime: 2023-03-02 14:38:06
  * @FilePath: /LeCaRD2.0/LeCaRDv2/README.md
 -->
 # LeCaRDv2:A Large-Scale Chinese Legal Case Retrieval Dataset
@@ -20,6 +20,17 @@
 
 ## Introduction
 LeCaRDv2 is one of the largest Chinese legal case retrieval datasets with the widest coverage of criminal charges. The dataset comprises 800 query cases and 55,192 candidate cases extracted from 4.3 million criminal case documents. We believe it can be a reliable benchmark that promotes relevant research in the field.
+
+Compared with LeCaRDv1, the data size of LeCaRDv2 is approximately 8 times larger.Moreover, we enrich the existing relevance criteria and consider characterization, penalty, procedure three aspects together. Also, we propose a new candidate pooling strategy to alleviate potential bias in the annotation process. All cases are annotated by multiple legal experts majoring in criminal law.
+
+The statistics of LeCaRDv2 shows as follow:
+|                         | LeCaRDv2      | 
+| ----------------------- | ------------- |
+| #Users                  | 173,831       |
+| #Items                  | 12,872,636    | 
+| #Interactions           | 26,667,260    | 
+| #Test Queries           | 171,728       | 
+
 
 ## Data Structure
 
