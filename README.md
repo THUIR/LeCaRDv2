@@ -2,7 +2,7 @@
  * @Author: lihaitao
  * @Date: 2023-02-28 23:34:00
  * @LastEditors: Do not edit
- * @LastEditTime: 2023-03-02 02:05:07
+ * @LastEditTime: 2023-03-02 12:17:08
  * @FilePath: /LeCaRD2.0/LeCaRDv2/README.md
 -->
 # LeCaRDv2:A Large-Scale Chinese Legal Case Retrieval Dataset
@@ -13,15 +13,14 @@
 
 - [Introduction](#introduction)
 - [Dataset Structure](#dataset-structure)
-- [Install](#install)
+<!-- - [Install](#install) -->
 - [Experiment](#experiment)
-- [Evaluation](#evaluation)
+<!-- - [Evaluation](#evaluation) -->
 - [Requirements](#requirements)
 - [Authors](#authors)
 - [License](#license)
 
 ## Introduction
-
 LeCaRDv2 is one of the largest Chinese legal case retrieval datasets with the widest coverage of criminal charges. The dataset comprises 800 query cases and 55,192 candidate cases extracted from 4.3 million criminal case documents. We believe it can be a reliable benchmark that promotes relevant research in the field.
 
 ## Data Structure
@@ -47,14 +46,17 @@ You can download the candidate cases from this link [download](https://drive.goo
 where `pid` is the ID of the case, `qw` is the full content,  `fact` is the basic facts of the case, `reason` is the analysis process of judges, `result` is the case judgment, `charge` is the criminal charge(s) of the case, `article` is the the criminal law article of this case document.
 
 ### Labels
+`relevence.trec` is the relevance annotation with TREC qrels format. Specifically, each line has the `qid \t 0 \t pid \t label` format.
 
-
+`relevence_gold.trec` is annotated with relevance at level 2 or higher.
 
 ## Experiment
+The traditional methods are implemented with [pyserini](https://github.com/castorini/pyserini) toolkit and the code of the pre-trained model is referenced from [dense](https://github.com/luyug/Dense).
 
 
 
-## Evaluation
+
+<!-- ## Evaluation -->
 
 
 
