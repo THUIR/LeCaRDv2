@@ -2,7 +2,7 @@
  * @Author: lihaitao
  * @Date: 2023-02-28 23:34:00
  * @LastEditors: Do not edit
- * @LastEditTime: 2023-03-02 15:44:05
+ * @LastEditTime: 2023-03-02 15:45:21
  * @FilePath: /LeCaRD2.0/LeCaRDv2/README.md
 -->
 # LeCaRDv2:A Large-Scale Chinese Legal Case Retrieval Dataset
@@ -110,19 +110,12 @@ pyserini==0.19.2
 ```
 
 ## Authors
-
 Haitao Li liht22@mails.tsinghua.edu.cn \
-
 Yunqiu Shao  shaoyq18@mails.tsinghua.edu.cn \
-
 Yueyue Wu wuyueyue@mail.tsinghua.edu.cn \
-
 Qingyao Ai aiqy@tsinghua.edu.cn \
-
 Yixiao Ma mayx20@mails.tsinghua.edu.cn \
-
 Yiqun Liu yiqunliu@tsinghua.edu.cn \
 
 ## License
-
 [MIT](LICENSE) © Haitao Li
