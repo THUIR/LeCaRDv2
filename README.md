@@ -2,7 +2,7 @@
  * @Author: lihaitao
  * @Date: 2023-02-28 23:34:00
  * @LastEditors: Do not edit
- * @LastEditTime: 2023-03-02 14:45:10
+ * @LastEditTime: 2023-03-02 15:44:05
  * @FilePath: /LeCaRD2.0/LeCaRDv2/README.md
 -->
 # LeCaRDv2:A Large-Scale Chinese Legal Case Retrieval Dataset
@@ -11,9 +11,7 @@
 
 - [Introduction](#introduction)
 - [Dataset Structure](#dataset-structure)
-<!-- - [Install](#install) -->
 - [Experiment](#experiment)
-<!-- - [Evaluation](#evaluation) -->
 - [Requirements](#requirements)
 - [Authors](#authors)
 - [License](#license)
