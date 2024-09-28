@@ -43,6 +43,8 @@ where `id` is each query's unique ID, `query` is the query content, and `fact` i
 
 `train_query.json` and `test_query.json` are training data and testing data respectively, where the training data has 640 lines and the testing data has 160 lines.
 
+`query_allcontext.json` contains the entire content of the case in the query.
+
 ### Candidates
 You can download the candidate cases from this link [download](https://drive.google.com/file/d/1CqQ0ID5_9-qxaZm9TGLh38dVhLfYnl_C/view?usp=share_link).
 
