@@ -43,7 +43,7 @@ where `id` is each query's unique ID, `query` is the query content, and `fact` i
 
 `train_query.json` and `test_query.json` are training data and testing data respectively, where the training data has 640 lines and the testing data has 160 lines.
 
-`query_allcontext.json` contains the entire content of the case in the query.
+`query_allcontext.json` contains the entire content of the case in the query, which includes the title, programme, type, fulltext, fact, reason, result, claim, law, xf fields.”’
 
 ### Candidates
 You can download the candidate cases from this link [download](https://drive.google.com/file/d/1CqQ0ID5_9-qxaZm9TGLh38dVhLfYnl_C/view?usp=share_link).
@@ -58,6 +58,8 @@ where `pid` is the ID of the case, `qw` is the full content,  `fact` is the basi
 `relevence.trec` is the relevance annotation with TREC qrels format. Specifically, each line has the `qid \t 0 \t pid \t label` format.
 
 `relevence_gold.trec` is annotated with relevance at level 2 or higher. For convenience, the annotation labels of the test data are organized in `test_relevence.trec`/`test_relevence_gold.trec` 
+
+To facilitate the study of performance on ranking, ranking_pool.json provides the query and the corresponding ranking pool containing 100 documents, where `qid` is the id of the query and `rank_doc_id` contains document ids. 
 
 ## Experiment
 The traditional methods are implemented with [pyserini](https://github.com/castorini/pyserini) toolkit and the code of the pre-trained model is referenced from [dense](https://github.com/luyug/Dense).
