@@ -119,7 +119,10 @@ Yunqiu Shao  shaoyq18@mails.tsinghua.edu.cn \
 Yueyue Wu wuyueyue@mail.tsinghua.edu.cn \
 Qingyao Ai aiqy@tsinghua.edu.cn \
 Yixiao Ma mayx20@mails.tsinghua.edu.cn \
-Yiqun Liu yiqunliu@tsinghua.edu.cn \
+Yiqun Liu yiqunliu@tsinghua.edu.cn 
+
+## Contact
+If you have any questions or suggestions, please contact liht22@mails.tsinghua.edu.cn
 
 ## License
 [MIT](LICENSE) © Haitao Li
